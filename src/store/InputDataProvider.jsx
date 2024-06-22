@@ -9,11 +9,13 @@ export default function InputDataProvider({children}){
         password: ""
     });
 
+    const [isSaved, setIsSaved] = useState(false);
+
     // const [formData, setFormData] = useState({});
 
     // function updateFormData(data){
     //     setFormData(data);
     // }
 
-    return <InputData.Provider value={{user, setUser}}>{children}</InputData.Provider>
+    return <InputData.Provider value={{user, setUser ,isSaved, setIsSaved}}>{children}</InputData.Provider>
 }
