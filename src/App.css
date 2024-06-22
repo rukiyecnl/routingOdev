@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.header {
+  display: flex;
+  gap: 20px;
+  font-size: 17px;
+  border-bottom: 4px solid white;
+  padding: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.link {
+  color: black;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-block: 20px;
+
+  & > input {
+    padding: 8px;
+    border-radius: 8px;
+    border-color: white;
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+   
+  & > button {
+    border: transparent;
+    background-color: rgb(223, 150, 150);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-block: 20px;
+  & > p {
+    margin-block: 0px;
   }
+  
 }
 
-.card {
-  padding: 2em;
+.confirmBtn, .changeBtn {
+  border: transparent;
+  background-color: rgb(223, 150, 150);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 17px;
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.changeBtn {
+  background-color: rgb(136, 203, 136);
+}
+
+.confirmBtn:hover {
+  color: white;
+  background-color: rgb(146, 57, 57);
 }

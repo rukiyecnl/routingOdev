@@ -4,8 +4,8 @@ export const Header = () => {
 
     return (
         <div className="header">
-            <Link to='/'>Giriş Bilgileri</Link>
-            <Link to='/kullanicilar'>Kullanıcılar</Link>
+            <Link to='/' className="link">Giriş Bilgileri</Link>
+            <Link to='/kullanicilar' className="link">Kullanıcılar</Link>
         </div>
     )
 }
